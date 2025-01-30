@@ -17,7 +17,7 @@ export default function TextArea(props) {
         </button>
         <button onClick={()=>{
             setContent("")
-        }} className="btn btn-primary" disabled={content.length==0}>Clear Text</button>
+        }} className="btn btn-primary" disabled={content.length===0}>Clear Text</button>
         <textarea className="form-control mx-3" id="floatingTextarea2" style={{height:"100px"}} onChange={(e) => {
             setContent(e.target.value)
             setCharCount((e.target.value).length)
@@ -27,10 +27,10 @@ export default function TextArea(props) {
         <div className="functions">
         <button onClick={()=>{
             setContent(content.toUpperCase())
-        }} className="btn btn-primary" disabled={content.length==0}>Convert To Upper Case</button>
+        }} className="btn btn-primary" disabled={content.length===0}>Convert To Upper Case</button>
         <button onClick={()=>{
             setContent(content.toLowerCase())
-        }} className="btn btn-primary d-flex flex-column" disabled={content.length==0}>Convert To Lower Case</button>
+        }} className="btn btn-primary d-flex flex-column" disabled={content.length===0}>Convert To Lower Case</button>
         <button  className="btn btn-primary">
         Word Count:
         </button>
