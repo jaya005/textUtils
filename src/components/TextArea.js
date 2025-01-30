@@ -21,7 +21,7 @@ export default function TextArea(props) {
         <textarea className="form-control mx-3" id="floatingTextarea2" style={{height:"100px"}} onChange={(e) => {
             setContent(e.target.value)
             setCharCount((e.target.value).length)
-            setWordCount((e.target.value).split(' ').filter((word)=>word!="").length)
+            setWordCount((e.target.value).split(' ').filter((word)=>word!=="").length)
         }} value={content} ></textarea>
         </div>
         <div className="functions">
