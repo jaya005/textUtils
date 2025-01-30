@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import TextArea from './components/TextArea';
-import Contact from './components/Contact';
-import About from './components/About';
 
 function App() {
   const [colorMode, setColorMode] = useState('dark');
