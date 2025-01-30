@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 10px;
+    font-family:Nunito, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #0d6efd;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;  /* Keep the border as per your original style */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+  }
+  
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  li{
+    list-style-type: none;
+  }
+  .navbar-nav li {
+    list-style-type: none;
+    margin: 0 15px;
+  }
+  
+  .navbar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    margin: 10px;
+  }
+  
+  .navbar-nav a:hover {
+    color: #f8f9fa;
+  }
+  
+  /* Styling for Navbar Items and Links */
+  .navbar-brand, .navbar-nav {
+    font-weight: bold;
+    text-transform: capitalize;
+    justify-content: space-around;
+    padding: 0px;
+  }
+  
+  /* Buttons */
+  .btn {
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+  }
+  
+  /* Form Switch Styling */
+  .form-check {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-check input {
+    margin-right: 10px;
+  }
+  
+  /* Navbar Toggler */
+  .navbar-toggler {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  .text-light {
+    color: #f8f9fa !important;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 800px) {
+    .nav-items, ul {
+      display: flex;
+    }
+  }
+  
+  /* Media Queries for Small Screens (less than 800px) */
+  @media (max-width: 800px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  
+    .navbar-nav li {
+      margin: 5px 0;
+    }
+  
+    .navbar-toggler {
+      display: block;
+      margin-left: auto;
+    }
+  
+    .navbar-nav a {
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .form-check {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Hover Effects for Buttons and Links */
+  .navbar-nav a:hover, .form-check input:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
